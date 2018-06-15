@@ -18,8 +18,21 @@ export class ShoppingCartComponent implements OnInit {
   }
 
 
-total() : number
-{
-  return this.shoppingCartService.total();
-}
+  total() : number
+  {
+    return this.shoppingCartService.total();
+  }
+
+  clear(){
+    this.shoppingCartService.clear();
+  }
+
+  removeItem(item : any)
+  {
+    this.shoppingCartService.remover(item);
+  }
+
+  addItem(item: any){
+    this.shoppingCartService.addItem(item);
+  }
 }

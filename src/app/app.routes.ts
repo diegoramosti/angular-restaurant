@@ -1,3 +1,4 @@
+import { OrderComponent } from './order/order.component';
 import { RestaurantDetailComponent } from './restaurant-detail/restaurant-detail.component';
 import { RestaurantsComponent } from './restaurants/restaurants.component';
 import { HomeComponent } from './home/home.component';
@@ -17,4 +18,5 @@ export const ROUTES: Routes =
             {path: 'reviews', component: ReviewsComponent}
             ]},
     { path: 'about', component: AboutComponent},
+    { path: 'order', component: OrderComponent}
 ]
